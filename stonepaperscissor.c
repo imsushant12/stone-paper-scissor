@@ -61,4 +61,3 @@ int game(char you,char computer)       //Definition of the function.
     else if(you=='z'&& computer=='p')   //user's choice is scissor and computer's choice is paper.
         return 1;
 }
-
