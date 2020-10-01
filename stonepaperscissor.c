@@ -12,10 +12,10 @@ void main()
     srand(time(0));                     //srand function will choose random number every time.
     n=rand()%100;                       //to make the random number under 100, divided it by 100.
 
-    if(n<33)                            //using simple probability 100 is roughly divided among stone,paper and scissor.
+    if(n<=33)                            //using simple probability 100 is roughly divided among stone,paper and scissor.
         computer='s';                   //s is denoting stone.
 
-    else if(n>33 && n<66)
+    else if(n>33&& n<=66)
         computer='p';                   //p is denoting paper.
 
     else
@@ -36,7 +36,7 @@ void main()
     else
         printf("\n\n\t\t\t\tOh! You have lost the game!\n");
 
-    printf("\t\t\t\tYOu choose : %c and Computer choose : %c\n",you,computer);
+    printf("\t\t\t\tYOu chose : %c and Computer chose : %c\n",you,computer);
 
 }
 
